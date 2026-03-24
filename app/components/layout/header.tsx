@@ -97,7 +97,7 @@ export const Header = ({
     `/workspaces/${task.project.workspace}/projects/${task.project._id}/tasks/${task._id}`;
 
   return (
-    <header className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b bg-background/95 backdrop-blur-sm px-4 lg:px-5">
+    <header className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b bg-background/95 backdrop-blur-sm pl-12 pr-4 md:pl-5 md:pr-5">
 
       {/* ── Workspace selector ── */}
       <DropdownMenu>
@@ -179,7 +179,7 @@ export const Header = ({
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
 
-            <ScrollArea className="max-h-[340px]">
+            <ScrollArea className="max-h-85">
               {notifications.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-10 text-center">
                   <CheckCircle2 className="size-8 text-muted-foreground mb-3 opacity-25" />
